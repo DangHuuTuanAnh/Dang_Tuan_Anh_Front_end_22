@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 1</title>
+	<style type="text/css">
+		#menu{
+			width: 100%;
+			height: 50px;
+			/* background-color: #30BC35; */
+			background-color: #7FB051;
+			/* font-family: 10px; */
+
+		}
+		img{
+			float: left;
+			list-style: none;
+		}
+		.menu-lv1{
+			list-style: none;
+			float: left;
+			margin-left: 10px;
+			color: white;
+			border-left : 1px solid white;
+			padding: 10px;
+			/* position: relative; */
+		}
+		.bars{
+			/* font-size: 25px !important; */
+			color: white !important;	
+		}
+		.search{
+			font-size: 20px !important;
+			color: white !important;
+			/* margin-right: 10px !important; */
+		}
+		.menu-lv2{
+			width: 153px;
+			height: 30px;
+			background-color:#A0DC68;
+			border: 1px solid #7FB051;
+			/* margin-top: 21px; */
+			/* margin-left: 5px; */
+			display: none;
+			top: 10;
+			/* position: absolute; */
+			padding-left: 0px;
+			/* position: relative; */
+		}
+		.menu-lv1:hover .menu-lv2{
+			display: block;
+		}
+		li{
+			color: black;
+			border-bottom: 1px solid #7FB051;
+			list-style: none;
+		}
+		.ul-lv1{
+			padding-left: 0px;
+		}
+		.menu-lv3{
+			margin-left: 115px;
+			width: 146px;
+			height: 30px;
+			background-color: #7FB051;
+			border: 1px solid #A0DC68;
+			display: none;
+			/* position: absolute;
+			left: 40px;
+			            top: -2px;
+			            margin-top: 1px; */
+		}
+		.menu-lv2:hover{
+			color: white;
+		}
+		.menu-lv2:hover .menu-lv3{
+			display: block;
+		}
+		.menu-lv3:hover{
+			color: white;
+		}
+
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+</head>
+<body>
+	<div id="menu">
+		<ul>
+			<span><img src="img/logo24h.jpg" width="70px" height="50px"></span>
+			<li class="menu-lv1"><span class="fa fa-bars bars"> Xem danh mục</span>
+				<ul class="ul-lv1">
+					
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Trang chủ 24 giờ</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Tin tức trong ngày</span>
+							<ul>
+								<li class="menu-lv3">Tin Hà Nội</li>
+								<li class="menu-lv3">Tin TP Hồ Chí Minh</li>
+								<li class="menu-lv3">Tin Đà Nẵng</li>
+								<li class="menu-lv3">Tai nạn giao thông</li>
+								<li class="menu-lv3">Tin Cần Thơ</li>
+								<li class="menu-lv3">Tin thời tiết</li>
+								<li class="menu-lv3">Dự báo thời tiết</li>
+							</ul>
+						</li>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Bóng đá</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Thế giới</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Thời trang</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> An ninh xã hội</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Thời trang hi-tech</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Tài chính-Bất động sản</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Ẩm thực</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Làm đẹp</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Đời sống showbiz</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Giải trí</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Bạn trẻ-Cuộc sống</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Giáo dục-Du học</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Thể thao</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Phi thường-Kỳ quặc</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Công nghệ thông tin</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Ô tô</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Thị trường-Tiêu dùng</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Du lịch</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Sức khỏe-Đời sống</li></span>
+						<li class="menu-lv2"><span class="fa fa-angle-right"> Video tổng hợp</li></span>
+				
+				</ul>
+			</li>
+			<li class="menu-lv1">Tin tức quốc tế</li>
+			<li class="menu-lv1">Hi-tech
+				<ul class="ul-lv1">
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Dế sắp ra lò</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Tin tức công nghệ</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Mỹ nữ và công nghệ</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Laptop giá rẻ</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Dế giá rẻ</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Điện thoại</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Máy tính xách tay</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Máy nghe nhạc</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Máy ảnh và camera số</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Các sản phẩm khác</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Thế giới công nghệ</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Máy tính bảng</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Đánh giá sản phẩm</li></span>
+					<li class="menu-lv2"><span class="fa fa-angle-right"> Điện tử gia dụng</li></span>
+
+				</ul>
+			</li>
+			<li class="menu-lv1">Showbiz</li>
+			<li class="menu-lv1">Giải trí</li>
+			<li class="menu-lv1">Sống trẻ</li>
+			<li class="menu-lv1">Thể thao</li>
+			<li class="menu-lv1">Sức khỏe</li>
+			<li class="menu-lv1">Video</li>
+			<li class="menu-lv1">Phái đẹp</li>
+			<li class="menu-lv1">Game</li>
+			<span class="fa fa-search search"></span>
+		</ul>
+	</div>
+</body>
+</html>

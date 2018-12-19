@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 1</title>
+	<style type="text/css">
+		#full-body{
+			background-color: white;
+			width: 60%;
+			height: 1255px;
+			font-family: arial;
+			font-size: 12px;
+			border-style: solid;
+			border-color: white;
+		}
+		ul{
+			color: #FE9A2E;
+			list-style: none;
+		}
+		#menu-ngang{
+			width: 100%;
+			height: 30px;
+			background-color:#424242;
+			text-align: left;
+		}
+		li{
+			float: left;
+			margin-left: 10px;
+			background-color: #424242; 
+		}
+		p{
+			float: left;
+			margin-left: 10px;
+		}
+		p:hover{
+			color: blue;
+		}
+		a{
+			color: orange;
+		}
+		a:hover{
+			color: red;
+		}
+		#left-menu{
+			width: 20%;
+			height:810px;
+			float: left;
+			/* border-style: solid;
+			border-color: black; */
+			display: inline-block;
+		}
+		.small-menu{
+			width: 147px;
+			height: 168px;
+			background-color: white;
+			border-style: solid;
+			border-color: #ccc;
+			text-align: left;
+
+		}
+		.b1{
+			height: 20px;
+			color: white;
+			background-image: url("img/menu_bar.gif");
+		}
+		#small-menu1{
+			width: 147px;
+			height: 80px;
+			background-color: white;
+			text-align: center;
+			border-style: solid;
+			border-color: #ccc;
+		}
+		#small-menu2{
+			width: 147px;
+			height: 233px;
+			background-color: white;
+			text-align: center;
+			border-style: solid;
+			border-color: #ccc;
+			text-align: left;
+		}
+		#main{
+			width: 58%;
+			height: 800px;
+			/* border-style: solid;
+			border-color: black; */
+			float: center;
+
+		}
+		#b2{
+			width: 98%;
+			height: 80px;
+			color: white;
+			background-color: #FAAC58;
+			border-style: solid;
+			border-radius: 20px;
+			text-align: left;
+		}
+		.b3{
+			width: 98%;
+			height: 140px;
+			/* border-style: solid;
+			border-color: #ccc; */
+		}
+		.can-trai{
+			height: 20px;
+			background-image: url("img/main_bar_left.gif");
+			color: white;
+			text-align: left;
+		}
+		.tieude-trai{
+			color: #FE9A2E;
+			text-align: left;
+		}
+		.can-phai{
+			height: 20px;
+			background-image: url("img/main_bar_right.gif");
+			color: white;
+			text-align: right;
+		}
+		.tieude-phai{
+			width: 35%;
+			display: inline-block;
+			color: #FE9A2E;
+			float: right;
+		}
+		.tieude-phai>p{
+			margin:0px;
+		}
+		.anh-trai{
+			width: 40%;
+			display: inline-block;
+			float: left;
+		}
+		.ND-phai{
+			width: 60%;
+			height: 100px;
+			display: inline-block;
+			text-align: left;
+		}
+		.anh-phai{
+			 width: 38%; 
+			display: inline-block;
+			float: right;
+			/* border-style: solid;
+			border-color: black; */
+		}
+		.ND-trai{
+			width: 60%;
+			height: 100px;
+			text-align: left;
+			/* border-style: solid;
+			border-color: black; */
+			display: inline-block;
+			margin-top:10px;
+		}
+		#right-menu{
+			width: 20%;
+			height: 810px;
+			/* border-style: solid;
+			border-color: black; */
+			float: right;
+			
+		}
+		#footer{
+			height: 60px;
+			background-color: #424242;
+			color: white;
+			text-align: center;
+		}
+	</style>
+
+</head>
+<body background="img/tuyet.jpg">
+	<div align="center">
+		<div id="full-body">
+			<div>
+			<div>
+				<img src="img/123.jpg" width="100%" height="350px">
+			</div>
+			<div id="menu-ngang" style="margin-top: -14px">
+				<ul>
+					<li>Trang chủ</li>
+					<li>Giới thiệu</li>
+					<li>Tin tức</li>
+					<li>Liên hệ</li>
+					<li>Diễn đàn</li>
+				</ul>
+			</div>
+			<div>
+				<hr width="100%">
+			</div>
+			<div id="left-menu">
+				<div class="small-menu">
+					<div class="b1" style="text-align: center;">Danh sách chính</div>
+					<div>
+						<p>Gia công phần mềm</p>
+						<p>Đào tạo lập trình viên</p>
+						<p>Tư vấn doanh nghiệp</p>
+						<p>Ảnh viện áo cưới</p>
+					</div>
+				</div>
+				<br>
+				<div class="small-menu">
+					<div class="b1" style="text-align: center;">Bài viết đáng chú ý</div>
+					<div>
+						<p>Hướng dẫn đăng ký học</p>
+						<p>Hình thức học tập online</p>
+						<p>Cài đặt sử dụng skype</p>
+						<p>Cài đặt sử dụng teamview</p>
+					</div>
+				</div>
+				<br>
+				<img src="img/img1.gif">
+				<img src="img/img2.gif">
+			</div>
+			<div id="right-menu">
+				<div id="small-menu1" align="center">
+					<div class="b1">Tư vấn trực tuyến</div>
+					<div>
+						<img src="img/online.gif">
+						<img src="img/offline.gif">
+					</div>
+				</div>
+				<br>
+				<div id="small-menu2">
+					<div class="b1" style="text-align: center;">Các bài viết mới</div>
+					<div>
+						<p>Htaccess trong php</p>
+						<p>Html 5 & SEO</p>
+						<p>Viết trang login & logout cho hệ thống</p>
+						<p>CSS nâng cao</p>
+						<p>Làm mịn da mặt với photoshop Cs3</p>
+					</div>
+				</div>
+				<br>
+				<img src="img/img3.gif">
+				<img src="img/img4.gif">
+				<img src="img/img5.gif">
+			</div>
+			<div id="main">
+				<div id="b2" align="center">
+					<p><i>ZENT ACADEMY-đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước.Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu của công việc...</i></p>
+				</div>
+				<br>
+				<div class="b3">
+					<div class="can-trai">CNTT</div>
+					<div class="tieude-trai">Gia Công Phần Mềm</div>
+					<div class="anh-trai"><img src="img/phanmem.gif"></div>
+					<div class="ND-phai">
+						<p>ZENT ACADEMY-đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước.Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu của công việc...<a href="">Chi tiết</font></a></p>
+					</div>
+				</div>
+				<br>
+				<div class="b3">
+					<div class="can-phai">GIÁO DỤC</div>
+					
+					<div class="ND-trai">
+						<p>ZENT ACADEMY-đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước.Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu của công việc...<a href="">Chi tiết</font></a></p>
+					</div>
+					<div class="tieude-phai">
+						<p>Đào Tạo Lập Trình Viên</p>
+						<img src="img/leroi.jpg" width="98%" height="108px" align="right">
+					</div>
+					<!-- <div class="anh-phai"></div> -->
+
+				</div>
+				<br>
+				<div class="b3">
+					<div class="can-trai">THƯƠNG MẠI</div>
+					<div class="tieude-trai">Tư Vấn Doanh Nghiệp</div>
+					<div class="anh-trai"><img src="img/doanhnghiep.gif"></div>
+					<div class="ND-phai">
+						<p>ZENT ACADEMY-đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước.Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu của công việc...<a href="">Chi tiết</font></a></p>
+					</div>
+				</div>
+				<br>
+				<div class="b3">
+					<div class="can-phai">DỊCH VỤ</div>
+					
+					<div class="ND-trai">
+						<p>ZENT ACADEMY-đơn vị chuyên đào tạo các lập trình viên chuyên nghiệp cho các thị trường Bắc Mỹ và Canada cũng như các doanh nghiệp trong nước.Chúng tôi hy vọng sẽ mang đến cho các doanh nghiệp những cá nhân xuất sắc phù hợp với yêu cầu của công việc...<a href="">Chi tiết</font></a></p>
+					</div>
+					<div class="tieude-phai">
+						<p>Ảnh Viện Áo Cưới</p>
+						<img src="img/anhvien.gif">
+					</div>
+				</div>
+			</div>
+			
+			<div id="footer">
+				Bản Quyền Thuộc Về ZENTGROUP - ACADEMY
+			</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+
+
+

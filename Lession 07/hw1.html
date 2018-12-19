@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bai tap</title>
+	<style type="text/css">
+		.menu{
+			margin: 0 auto;
+			width: 80%;
+		}
+		.left{
+			float: left;
+		}
+		.right{
+			float: right;
+		}
+		.title{
+			float: left;
+			list-style: none;
+			margin-left: 50px;
+			font-size: 12px;
+			margin-top: 10px;
+		}
+		#picture{
+			width: 100%;
+		}
+		#content{
+			text-align: center;
+		}
+		.posts{
+			width: 20%;
+			display: inline-block;
+		}
+		#main-features{
+			text-align: center;
+			margin: 0 auto;
+			width: 80%;
+		}
+		#all-picture{
+			margin: 0 auto;
+			width: 100%;
+		}
+		.small-picture{
+			width: 45%;
+			display: inline-block;
+			/*height: 200px;*/
+		}
+		#news-A{
+			background-color: #e85222fa;
+			color: white;
+			/*height: 210px;*/
+		}
+		#news{
+			margin: 0 auto;
+			width: 80%;
+			text-align: center;
+			padding-top: 45px;
+			height: 210px;*
+		}
+		.avatar{
+			display: inline-block;
+			width: 20%;
+			margin-left: 10px;
+			margin-right: 10px;
+			margin-top: 20px;
+			margin-top: 50px;
+		}
+		#news-1{
+			width: 80%;
+			margin: 0 auto;
+			text-align: center;
+			/*height: 450px;*/
+		}
+		.multi{
+			float: left;
+			width: 30%;
+			height: 200px;
+			margin-right: 20px;
+		}
+		
+		.item{
+			width: 19%;
+		    margin: 0 auto;
+		    /*height: 50px;*/
+		    border-radius: 100px;
+		    background-color: #e85222fa;
+		    display: inline-block;
+		}
+		.icons{
+			color: white!important;
+			margin: 5px auto !important;
+			font-size: 30px!important;
+			padding-top: 5px!important;
+		}
+		.ND{
+			width: 65%;
+			float: left;
+			text-align: left;
+			height: 200px;
+		}
+		.avatar-1{
+			border-radius: 20px;
+		}
+		#footer{
+			background-color: #3e3c3c;
+			color: white;
+			/*height: 300px;*/
+		}
+		#small-footer{
+			width: 80%;
+			margin: 0 auto;
+			/*height: 282px;*/
+		}
+		#menu-footer{
+			background-color: black;
+			height: 60px;
+			color: white;
+		}
+		.child-multi{
+			border-bottom: 1px solid #ccc;
+		}
+		#parent-buttom{
+			margin: 0 auto;
+			width: 50%;
+			height: 25px;
+		}
+		.buttom{
+			border-radius: 10px;
+			color: black;
+			background-color: white;
+			float: left;
+			height: 20px;
+			width: 50%;
+    		padding-top: 5px;
+		}
+		.posts-1{
+			width: 30%;
+			display: inline-block;
+			/*height: 200px;*/
+		}
+		.item-1{
+			width: 30%;
+			float: left;
+			height: 200px;
+		}
+		.item-2{
+			width: 55%;
+		    margin: 0 auto;
+		    /*height: 50px;*/
+		    border-radius: 100px;
+		    background-color: #e85222fa;
+		    margin-top: 22px;
+		}
+		.fonts{
+			color: #e85222fa;
+		}
+		.A{
+			list-style: none;
+			float: left;
+		}
+		.bars{
+			display: none;
+			list-style: none;
+			font-size: 20px !important;
+			border: 1px solid black;
+			border-radius: 5px;
+			text-align: center;
+			margin-top: 38px;
+		}
+		@media (min-width: 701px) and (max-width: 960px){
+			.posts{
+				width: 20%;
+			}
+			.small-picture{
+				width: 45%;
+			}
+			.posts-1{
+				width: 30%;
+			}
+			.avatar{
+				width: 20%;
+			}
+			.item{
+				width: 25%;
+			}
+			.item-2{
+				width: 67%;
+			}
+			
+		}
+		@media (min-width: 481px) and (max-width: 700px){
+			
+			.small-picture{
+				width: 100%;
+			}
+			.posts-1{
+				width: 100%;
+			}
+			.avatar{
+				width: 100%;
+			}
+			.multi{
+				width: 100%;
+			}
+			.title{
+				display: none;
+			}
+			.bars{
+				display: block;
+			}
+			.bars:hover .title{
+
+			}
+			.item{
+				width: 33%;
+			}
+			.item-2{
+				width: 29%;
+			}
+			
+		}
+		@media (max-width: 480px){
+			.posts{
+				width: 100%;
+			}
+			.small-picture{
+				width: 100%;
+			}
+			.posts-1{
+				width: 100%;
+			}
+			.avatar{
+				width: 100%;
+			}
+			.multi{
+				width: 100%;
+			}
+			.title{
+				display: none;
+			}
+			.bars{
+				display: block;
+			}
+			.bars:hover .title{
+				
+			}
+			.item{
+				width: 10%;
+			}
+			.item-2{
+				width: 42%;
+			}
+			
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="../Lession 06/css/font-awesome.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<header>
+		<div class="menu">
+			<div class="left">
+				<ul>
+					<li class="A"><span><h2 class="fonts">Multi</h2></span></li>
+					<!-- <li class="A"></li> -->
+				</ul>
+			</div>
+			<div class="right">
+				<div class="bars">
+					<span class="fa fa-bars"></span>
+				</div>
+				<ul>
+					<li class="title fonts">HOME</li>
+					<li class="title">SERVICES</li>
+					<li class="title">BLOG</li>
+					<li class="title fonts">PORTFOLIO</li>
+					<li class="title">CONTACT</li>
+				</ul>
+			</div>
+			
+		</div>
+	</header>
+		<div id="picture">
+			<img src="img/slider/1.jpg" style="width: 100%">
+		</div>
+		<div id="content">
+			 <h3>Providing Our Clients</h3>
+			 <h2><b>Best & Create Solutions</b></h2>
+			 <div class="posts">
+			 	<div class="item">
+			 		<span class="fa fa-cogs icons"></span>
+			 	</div>
+			 	<h3>CREATE SOLUTIONS</h3>
+			 </div>
+			 <div class="posts">
+			 	<div class="item">
+			 		<span class="fa fa-leaf icons"></span>
+			 	</div>
+			 	<h3>CREATE SOLUTIONS</h3>
+			 </div>
+			 <div class="posts">
+			 	<div class="item">
+			 		<span class="fa fa-heart-o icons"></span>
+			 	</div>
+			 	<h3>CREATE SOLUTIONS</h3>
+			 </div>
+			 <div class="posts">
+			 	<div class="item">
+			 		<span class="fa fa-laptop icons"></span>
+			 	</div>
+			 	<h3>CREATE SOLUTIONS</h3>
+			 </div>
+		</div>
+		<div id="main-features">
+			<h2><b>Main Features</b></h2>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt, voluptatibus!</p>
+			<div id="all-picture">
+				<div class="small-picture" >
+					<img src="img/6.jpg" style="width: 100%">
+				</div>
+				<div class="small-picture">
+					<img src="img/5.jpg" style="width: 100%">
+				</div>
+			</div>
+			<div>
+				<div class="posts-1">
+					<div class="item-1">
+						<div class="item-2">
+					 		<span class="fa fa-rocket icons"></span>
+					 	</div>
+					</div>
+				 	<div class="ND">
+				 		<h3>SEO Optimized</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perspiciatis, asperiores sed dicta deserunt vel?</p>
+				 	</div>
+				 </div>
+				 <div class="posts-1">
+				 	<div class="item-1">
+				 		<div class="item-2">
+					 		<span class="fa fa-camera icons"></span>
+					 	</div>
+				 	</div>
+				 	<div class="ND">
+				 		<h3>Easy to Install</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perspiciatis, asperiores sed dicta deserunt vel?</p>
+				 	</div>
+				 </div>
+				 <div class="posts-1">
+				 	<div class="item-1" >
+				 		<div class="item-2">
+					 		<span class="fa fa-heart-o icons"></span>
+					 	</div>
+				 	</div>
+				 	<div class="ND">
+				 		<h3>Unlimited Possibilities</h3>
+				 		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus perspiciatis, asperiores sed dicta deserunt vel?</p>
+				 	</div>
+				 </div>
+			</div>
+			
+		</div>
+		
+		<div id="news-A">
+			<div id="news">
+				<h2>Easily Customizable & Unlimited Support</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, omnis.</p>
+				<div id="parent-buttom">
+					<div class="buttom">
+						<span>PURCHASE NOW</span>
+					</div>
+					<div class="buttom">
+						<span>LEARN NOW</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="news-1">
+			<div>
+				<h3>What People Are</h3>
+				<h2>Saying About Us</h2>
+				<div class="avatar">
+					<img src="img/about/man1.jpg" class="avatar-1">
+					<h3>John Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consectetur</p>
+				</div>
+				<div class="avatar">
+					<img src="img/about/man2.jpg" class="avatar-1">
+					<h3>John Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consectetur</p>
+				</div>
+				<div class="avatar">
+					<img src="img/about/man3.jpg" class="avatar-1">
+					<h3>John Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consectetur</p>
+				</div>
+				<div class="avatar">
+					<img src="img/about/man4.jpg" class="avatar-1">
+					<h3>John Doe</h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione consectetur</p>
+				</div>
+			</div>
+		</div>
+		<div id="footer">
+			<div id="small-footer">
+				<div class="multi">
+					<h3><b>MULTI</b></h3>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam dolor, natus totam exercitationem quia quae, eius aliquam. Quidem sit neque, distinctio voluptates reiciendis placeat et dolore nihil, nostrum atque aut.</p>
+					<span class="fa fa-facebook-square"></span>
+					<span class="fa fa-twitter-square"></span>
+					<span class="fa fa-linkedin-square"></span>
+					<span class="fa fa-pinterest"></span>
+					<span class="fa fa-google-plus-square"></span>
+				</div>
+				<div class="multi">
+					<h3><b>RECENT PORTS</b></h3>
+					<div class="child-multi">
+						<p>Awesome Design with Overviews</p>
+					</div>
+					<div class="child-multi">
+						<p>Great Design with Features</p>
+					</div>
+					<div class="child-multi">
+						<p>Limitless functions & Works</p>
+					</div>
+					<div class="child-multi" style="border-bottom: none;">
+						<p>Multi is simple and clean design</p>
+					</div>
+				</div>
+				<div class="multi">
+					<h3><b>CONTACT INFO</b></h3>
+					<div class="child-multi">
+						<p><span class="fa fa-home">Office #38,Suite 54 Elizebth Street,Victoria State Newyork,USA 33026</span></p>
+					</div>
+					<div class="child-multi">
+						<p><span class="fa fa-phone">+38000129900</span></p>
+					</div>
+					<div class="child-multi" style="border-bottom: none;">
+						<p><span class="fa fa-envelope-o">info@domain.net</span></p>
+					</div>
+				</div>
+				<div style="clear:both"></div>
+			</div>
+			
+		</div>
+		<div id="menu-footer">
+			<div class="menu">
+				<div class="left">
+					<p>&copy 2015 bootstraptaste.All Right Reserved</p>
+				</div>
+				<div class="right">
+					<ul>
+						<li class="title ">Home</li>
+						<li class="title">Services</li>
+						<li class="title">Blog</li>
+						<li class="title">Portfolio</li>
+						<li class="title">Contact</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+</body>
+</html>

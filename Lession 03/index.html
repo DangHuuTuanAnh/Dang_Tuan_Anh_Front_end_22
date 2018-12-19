@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		.green{
+			color: green;
+			display: block;
+			font-size: 20px
+		}
+		.green:hover{
+			color: yellow;
+		}
+		#child{
+			display: none;
+		}
+		#menu{
+			width: 20%;
+			height: 70px;
+			background-color: #ccc;
+
+			border-color: black;
+			border-width: 1px;
+			border-style: solid;
+			border-radius: 10px; 
+		}
+		#menu:hover #child{
+			display: block;
+		}
+		#post{
+			background-color: #ccc;
+			width: 40%;
+			height: 250px;
+		}
+		img{
+			float: left;
+			width: 35%;
+			height: 200px;
+		}
+		p{
+			float: right;
+			width: 60%;
+		}
+		ul{
+			clear: both; /* làm cho phần nội dung ở dưới k bị tràn lên */
+			list-style: none; /* ẩn chấm tròn danh sách */
+		}
+		/* #red{
+			color: red;
+			width: 50%;
+			height: 200px;
+			background-color: #ccc;
+			background-image: url('../Lession 01/img/barca 1.jpg'); 
+			background-repeat: no-repeat;
+			background-size: 100%;
+			background-attachment: fixed;
+			font-family: Time New Roman;
+			font-style: italic;
+			font-weight: 900;
+			font-size: 30px;
+		
+			color: red;
+			text-align: justify;
+			text-indent: 100px;
+			text-decoration: underline;
+			overflow: auto;
+		
+		} */
+		.large{
+			font-size: 20px;
+		}
+	</style>
+		<link rel="stylesheet" type="text/css" href="style.css">
+	</style>
+</head>
+<body>
+	<!-- style="color: red;font-size:15px" -->
+	<p>Kiến thức về CSS</p>
+	<!-- <p id="red">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p> -->
+	<p class="green large">Kiến thức về CSS2</p>
+	<p>Xin chào mừng bạn<span class="green">Tuấn anh</span>đã tham gia Zent Group</p>
+	<div id="menu">
+		<ul id="child">
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+			<li>D</li>
+		</ul>
+	</div>
+	<p class="green">Kiến thức về CSS4</p>
+	<div id="post">
+		<h3>Tuấn Anh</h3>
+		<img src="../Lession 01/img/barca 1.jpg">
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium accusamus perferendis quam ipsam eius atque sapiente illum velit, totam, nam itaque, reprehenderit cupiditate maxime laborum consectetur qui ut laboriosam id.</p>
+		<ul>
+			<li>A</li>
+			<li>B</li>
+			<li>C</li>
+		</ul>
+	</div>
+</body>
+</html>

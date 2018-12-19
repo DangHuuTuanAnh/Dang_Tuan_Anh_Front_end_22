@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+	<style type="text/css">
+	#head{
+		width: 100%;
+		height: 100px;
+		/* background-color: #ccc;
+		border: 1px solid black; */
+	}
+	div{
+		width: 100%;
+		height: 786px;
+	}
+	li{
+		list-style: none;
+		float: left;
+		margin-left: 20px;
+	}
+	ul{
+		margin-left: 10px;
+	}
+	img{
+		width:100% ;
+		height:192px;
+	}
+	#Zent{
+		font-size: 30px;
+		font-family: Times New Roman;
+	}
+	#left-menu{
+		width: 12%;
+		height: 786px;
+		/* background-color: #ccc;
+		border: 1px solid black; */
+		color: black;
+		float: left;
+		
+
+	}
+	.ND-left{
+		padding-left: 0px;
+		color: #585858;
+		margin-top: 13px;
+	}
+	.ND-left:hover{
+		color: #0080FF;
+	}
+	#main-menu{
+		width: 50%;
+		height: 786px;
+		/* background-color: #ccc;
+		border: 1px solid black; */
+		float: left;
+
+	}
+	.small-div{
+		width: 170px;
+		height: 233px;
+		background-color: #e2dcdc;
+		border: 1px solid black;
+		border-radius: 10px;
+		position: relative;
+		margin-left: 10px;
+		display: inline-block;
+		margin-top: 20px;
+	}
+	#top{
+		width: 98%;
+		top: 0px;
+		left: 1%;
+		position: absolute;
+		/* background-color: #e2dcdc; */
+
+	}
+	#main{
+		
+		top: 20px;
+		left: 0%;
+	 	position: absolute;
+
+	}
+	#bottom{
+		width: 100%;
+		bottom:0;
+		left: 0%;
+		position: absolute;
+		color: white;
+		z-index: 1;
+		font-size: 13px;
+		background-color: #69636359;
+		border-radius: 10px;
+		/* border-bottom-left-radius: 10px;
+		border-bottom-right-radius: 10px; */
+		/* opacity: 1; */
+		margin-bottom: 0px;
+
+	}
+	#footer{
+		width: 100%;
+		height: 100px;
+	}
+	.ND-footer{
+		color: #0080FF;
+	}	
+	</style>
+</head>
+<body background="img/bg.jpg" style="background-size: 100%;">
+	<div id="head">
+		<ul>
+			<li><span id="Zent"><i>Zent Group</i></span></li>
+			<li style="margin-left: 700px;">About</li>
+			<li style="margin-left: 10px;">Sign Up</li>
+			<input type="button" name="Sign" value="Sign In" style="margin-left: 20px;">
+		</ul>
+	</div>
+	<div>
+		<div id="left-menu">
+			<ul>
+				<li class="ND-left">Home</li>
+				<li class="ND-left">Tab Gallery</li>
+				<li class="ND-left">Create Tab</li>
+				<li class="ND-left">Favorites</li>
+				<li class="ND-left">Tech News</li>
+				<li class="ND-left">Travel</li>
+				<li class="ND-left">Photography</li>
+				<li class="ND-left">Finance World</li>
+				<li class="ND-left">Movies</li>
+				<li class="ND-left">Cooking</li>
+				<li class="ND-left">Fashion</li>
+			</ul>
+		</div>
+		<div id="main-menu">
+			<div class="small-div">
+				<p id="top"><b>Tech News</b></p>
+				<p id="main"><img src="img/ip.jpg" ></p>
+				<p id="bottom">ZentPhone by Zent Group</p>
+			</div>
+			<div class="small-div">
+				<p id="top"><b>Travel</b></p>
+				<p id="main"><img src="img/travel.jpg"></p>
+				<p id="bottom">Do your best-The rest will come</p>
+			</div>
+			<div class="small-div">
+				<p id="top"><b>Photography</b></p>
+				<p id="main"><img src="img/photo.jpg" ></p>
+				<p id="bottom">Take a shot!A Pulitzer prize is waiting for you</p>
+			</div>
+			<div class="small-div">
+				<p id="top"><b>Finance World</b></p>
+				<p id="main"><img src="img/finance.jpg"></p>
+				<p id="bottom">Gold? Don't chase it.What about dollar? Keep calm!</p>
+			</div>
+			<div class="small-div">
+				<p id="top"><b>Movies</b></p>
+				<p id="main"><img src="img/movie.jpg"></p>
+				<p id="bottom">Batman is rising is released in October</p>
+			</div>
+			<div class="small-div">
+				<p id="top"><b>Cooking</b></p>
+				<p id="main"><img src="img/cooking.jpg"></p>
+				<p id="bottom">How to cook spaghetti? Just click and taste.</p>
+			</div>
+			<div class="small-div">
+				<p id="top"><b>Fashion</b></p>
+				<p id="main"><img src="img/fashion.jpg"></p>
+				<p id="bottom">London fashion week with collection of Zent Group and YellowSipman.</p>
+			</div>
+			
+		</div>
+	</div>
+	<div id="footer">
+		<ul>
+			<li>Copyright &copy; 2015 Zent Group</li>
+			<li class="ND-footer"><a href="">About</a></li>
+			<li class="ND-footer"><a href="">FAQ</a></li>
+			<li class="ND-footer"><a href="">Blog</a></li>
+			<li class="ND-footer"><a href="">Mac App</a></li>
+			<li class="ND-footer"><a href="">iPad App</a></li>
+			<li class="ND-footer"><a href="">Tem of Use</a></li>
+			<li class="ND-footer"><a href="">Private Policy</a></li>
+		</ul>
+	</div>
+</body>
+</html>
