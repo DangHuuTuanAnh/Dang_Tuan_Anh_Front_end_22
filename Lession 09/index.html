@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+	Giá:<span>2.000.000 VNĐ</span>
+	<select id="opt">
+		<option value="1">Black</option>
+		<option value="2">Red</option>
+		<option value="3">Green</option>
+	</select>
+	<!-- Họ tên:<input id="FullnameId" class="FullnameCl" type="text" name="" value=""> -->
+	<span id="content" style="color: blue">
+		
+	</span>
+	<img src="../Lession 06/img/logo-sm.png" onmouseover="increase()" onmouseout="decrease()"> <!-- di chuột ra hoặc vào thì thay đổi thuộc tính -->
+	<input id="txt" type="text" name="">
+	<!-- <input type="button" name="" value="Đổi dữ liệu" onclick="fillData()"> -->
+	<input type="button" name="" value="Tăng" onclick="increase()">
+	<input type="button" name="" value="Giảm" onclick="decrease()">
+
+	<script type="text/javascript">
+		var txt = document.getElementById("txt");
+		txt.addEventListener("change",change);
+		txt.addEventListener("forcus" ,reset);
+		function fillData(){
+			/*// Cách 1:
+			var fullname = document.getElementById("FullnameId");//lấy đối tượng id
+			fullname.value = "Đặng Tuấn Anh";//thay đổi thuộc tính
+
+			//Cách 2:
+			var fullname = document.getElementsByClassName("FullnameCl"); //lấy đối tượng class
+			fullname[0].value = "Đặng Tuấn Anh";*/
+
+			//Cách 3:
+			/*var fullname = document.getElementsByTagName("input"); //lấy đối tượng tên thẻ
+			fullname[0].value = "Đặng Tuấn Anh";
+
+			var content = document.getElementById("content");
+			content.innerHTML = "Đặng Tuấn Anh";
+			content.style.color = "green";
+			content.style.border = '1px solid green';
+			content.style.fontWeight = '900';
+			content.style.fontSize = '20px';*/
+
+		}
+			function increase(){
+				var img = document.getElementsByTagName("img")[0];
+				var width = img.width;
+				var height = img.height;
+				img.width = width*1.2;
+				img.height = height*1.2;
+				img.style.opacity = '0.5';
+			}
+			function decrease(){
+				var img = document.getElementsByTagName("img")[0];
+				var width = img.width;
+				var height = img.height;
+				img.width = width/1.2;
+				img.height = height/1.2;
+				img.style.opacity = '1';
+
+			}
+			function change(){
+				var txt = document.getElementById("txt");
+				txt.style.background = 'blue';
+			}
+			function reset(){
+				var txt = document.getElementById("txt");
+				txt.style.background = 'white';
+			}
+	</script>
+</body>
+</html>

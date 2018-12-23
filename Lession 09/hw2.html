@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+	<style type="text/css">
+		#all-content{
+			background-color: #a3bec5;
+			width: 40%;
+			margin: 0 auto;
+			/*height: 400px;*/
+			border: 1px solid #8c8080;
+
+		}
+		.content{
+			border: 1px solid #8c8080;
+			height: 50px;
+			/*border: 1px solid black;*/
+		}
+		.left{
+			width: 10%;
+			float: left;
+			border-right: 1px solid #8c8080;
+			text-align: center;
+			height: 50px;
+
+		}
+		.right{
+			width: 85%;
+			float: left;
+			/*text-align: center;*/
+			/*border: 1px solid #8c8080;*/
+			height: 50px;
+		}
+		.check{
+			margin-top: 20px;
+		}
+		.text{
+			margin-left: 20px;
+		}
+		#choose{
+			width: 40%;
+			margin: 0 auto;
+			padding-top: 10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="all-content">
+		<div class="content"> 
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="left">
+				<input class="check" type="checkbox" name="">
+			</div>
+			<div class="right">
+				<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+			</div>
+		</div>
+	</div>
+	<div id="choose">
+		<input type="button" name="" value="Check all" onclick="checkall()">
+		<input type="button" name="" value="Uncheck all" onclick="uncheckall()">
+	</div>
+	<script type="text/javascript">
+		// var content = document.getElementsByClassName("content");
+		// content.addEventListener("mouseover",change);
+		// content.addEventListener("mouseout",reset);
+
+		// function change(){
+		// 	var content = document.getElementsByClassName('content');
+		// 	for (var i = 0; i < 8; i++) {
+		// 		content[i].addEventListener("mouseover",function(){
+		// 			this.style.background = '#04B431';
+		// 		});
+		// 		// content.style.background = '#04B431';
+		// 	}
+		// }
+			
+		// function reset(){
+		// 	var content = document.getElementsByClassName('content');
+		// 	for (var i = 0; i < 8; i++) {
+		// 		content.addEventListener("mouseout",function(){
+		// 			this.style.background = '#a3bec5';
+		// 		});
+		// 		// content.style.background
+		// 	}
+		// }
+		var content = document.getElementsByClassName("content");
+		for (var i = 0; i < content.length; i++) {
+			content[i].addEventListener('mouseover',function(){
+				this.style.background = '#04B431';
+			})
+			
+		}
+		for (var i = 0; i < content.length; i++) {
+			content[i].addEventListener('mouseout', function(){
+				this.style.background = '#a3bec5';
+			})
+		}
+		
+		function checkall(){
+			var cb = document.getElementsByClassName("check");
+			for (var i = 0; i < 8; i++) {
+				cb[i].checked = true;
+			}
+		}
+		function uncheckall(){
+			var cb = document.getElementsByClassName("check");
+			for (var i = 0; i < 8; i++) {
+				cb[i].checked = false;
+			}
+		} 
+	</script>
+</body>
+</html>

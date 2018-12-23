@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 1</title>
+	<style type="text/css">
+		#content{
+			width: 70%;
+			margin: 0 auto;
+		}
+		#change{
+			width: 20%;
+			height: 100px;
+			border: 1px solid black;
+			padding-left:10px;
+		}
+	</style>
+</head>
+<body>
+	<div id="content">
+		<div id="change">
+			<h3>Cỡ chữ</h3>
+			<input type="button" name="" value="Mặc định" onclick="mac_dinh()">
+			<input type="button" name="" value="Lớn" onclick="tang()">
+			<input type="button" name="" value="Nhỏ" onclick="giam()">
+		</div>
+		<p id="txt" style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis rem, minima voluptatum soluta, illum, ipsa repellat tempore quis autem dolor similique molestiae perferendis magnam ratione! Veniam laudantium mollitia at aliquam!</p>
+	</div>
+	
+	
+	
+	<script type="text/javascript">
+		var txt = document.getElementById("txt");
+		function tang(){
+			var a = txt.style.fontSize;
+			var b = a.replace('px','');
+			var c = parseInt(b);
+			txt.style.fontSize = (c + 4) + "px";
+		}
+		function giam(){
+			var a = txt.style.fontSize;
+			var b = a.replace('px','');
+			var c = parseInt(b);
+			txt.style.fontSize = (c - 4) + "px";
+		}
+		function mac_dinh(){
+			txt.style.fontSize = '20px';
+		}
+	</script>
+</body>
+</html>
