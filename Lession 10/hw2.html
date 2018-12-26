@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+	<style type="text/css">
+		body{
+			background-repeat: none;
+		}
+		#content{
+			width: 60%;
+			height: 372px;
+			margin: 0 auto;
+			border: 1px solid black;
+			border-radius: 15px;
+		}
+		.child-content{
+			margin-top: 10px;
+			/*border: 1px solid black;*/
+			margin-left: 10px;
+			height: 50px;
+		}
+		.ten{
+			width: 20%;
+			float: left;
+			height: 50px;
+			/*border: 1px solid black;*/
+
+		}
+		.nhap{
+			width: 50%;
+			float: left;
+
+			height: 50px;
+			/*border: 1px solid black;*/
+			
+		}
+		.lenght{
+			width: 90%;
+		}
+		#thaotac{
+			width: 50%;
+			height: 240px;
+			margin: 0 auto;
+		}
+		.thaotac-con{
+			width: 45%;
+			text-align: center;
+			display: inline-block;
+			margin-top: 10px;
+		}
+		.button{
+			background: #d22e2e;
+			color: white;
+			border: 1px solid red;
+		}
+		.canh-bao{
+			width: 26%;
+			color: red;
+			/*border: 1px solid black;*/
+			height: 50px;
+			float: left;
+
+		}
+		.yeucau{
+			display: none;
+		}
+	</style>
+</head>
+<body background="img/background1.jpg">
+	<div id="content">
+		<div class="child-content">
+			<div class="ten">
+				Họ và tên
+			</div>
+			<div class="nhap">
+				<input class="lenght" id="name2" class="name1" type="textbox" name="" value="" placeholder="nhập họ tên..."><span class="nameerr red"></span>
+			</div>
+			<!-- <div class="canh-bao">
+				<p class="yeucau" class="nameerr">Yêu cầu nhập đầy đủ họ tên</p>
+			</div> -->
+		</div>
+		<div class="child-content">
+			<div class="ten">
+				Giới tính
+			</div>
+			<div class="nhap">
+				<input type="radio" name="gener" value="1">Nam
+				<input type="radio" name="gener" value="0">Nữ
+			</div>
+		</div>
+		<div class="child-content">
+			<div class="ten">
+				Email
+			</div>
+			<div class="nhap">
+				<input class="lenght" class="email" type="email" name="email" value="" placeholder="nhập email..."><span class="nameerr"></span>
+			</div>
+			<!-- <div class="canh-bao">
+				<p class="yeucau">Yêu cầu nhập email</p>
+			</div> -->
+		</div>
+		<div class="child-content">
+			<div class="ten">
+				Số điện thoại
+			</div>
+			<div class="nhap">
+				<input class="lenght" class="phone" type="sdt" name="sdt" value="" placeholder="nhập số điện thoại..."><span class="nameerr"></span>
+			</div>
+			<!-- <div class="canh-bao">
+				<p class="yeucau">Yêu cầu nhập đầy số điện thoại</p>
+			</div> -->
+		</div>
+		<div class="child-content">
+			<div class="ten">
+				Mật khẩu
+			</div>
+			<div class="nhap">
+				<input class="lenght"class="password" type="password" name="password" value=""><span class="nameerr"></span>
+			</div>
+			<!-- <div class="canh-bao">
+				<p class="yeucau">Yêu cầu nhập mật khẩu</p>
+			</div> -->
+		</div>
+		<div class="child-content">
+			<div class="ten">
+				Xác nhận mật khẩu
+			</div>
+			<div class="nhap">
+				<input class="lenght" class="checkpass" type="password" name="password" value=""><span class="nameerr"></span>
+			</div>
+			<!-- <div class="canh-bao">
+				<p class="yeucau">Yêu cầu xác nhận mật khẩu</p>
+			</div> -->
+		</div>
+	</div>
+	<div id="thaotac">
+		<div class="thaotac-con">
+			<input id="dangky" class="button" type="button" name="" value="Đăng ký">
+		</div>
+		<div class="thaotac-con">
+		    <input class="button" type="button" name="" value="Xóa trắng">
+		</div>
+	</div>
+	<script type="text/javascript">
+			// var bton = document.getElementById('dangky');
+			// var request = document.getElementsByClassName('yeucau');
+			// bton.addEventListener("click", function(){
+			// 	for (var i = 0; i < request.length; i++) {
+			// 		request[i].style.display = 'block';
+			// 	}
+			// });
+			
+		var check=false;
+		var name1 = document.getElementsByClassName('name1')[0];
+		name1.addEventListener('blur', function(){
+			if(name1.value.trim()==''){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Mời bạn nhập tên";
+			}
+			else if(name1.value.length<8){
+				document.getElementsByClassName('nameerr')[0].innerHTML="Tên Phải lớn hơn 8 kí tự";
+			}
+			else{
+				document.getElementsByClassName('nameerr')[0].innerHTML="";
+			}
+		});
+
+		var email =document.getElementsByClassName('email')[0];
+		
+		var checkMail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		form_control.addEventListener("blur", function(){
+			if (form_control.value.trim()=='') {
+				document.getElementsByClassName('emailerr')[0].innerHTML="Mời bạn nhập email"
+			}
+			else if (form_control != checkMail) {
+				document.getElementById('emailerr').innerHTML="Nhập đúng định dạng abc@domain.xyz";
+				check=false;
+			}
+		});
+
+		var phone=document.getElementsByClassName('phone')[0];
+		phone.addEventListener("blur",function(){
+			if (phone.value.trim()=='') {
+
+				document.getElementsByClassName('numberr')[0].innerHTML="mời bạn nhập SDT"
+			}
+			 if (isNaN(phone)==true) {
+				document.getElementsByClassName('numberr')[0].innerHTML="SDT phải ở dạng số"
+				
+			}
+			else {
+				document.getElementsByClassName('numberr')[0].innerHTML="";
+				
+			}
+		});
+
+		var password =document.getElementsByClassName('password')[0];
+		password.addEventListener("blur",function(){
+			if (password.value.trim()=='') {
+				document.getElementsByClassName('passworderr')[0].innerHTML="moi ban nhap mat khau"
+			}
+			else if (password.value.length<8) {
+				document.getElementsByClassName('passworderr')[0].innerHTML="MK Phải lớn hơn 8 kí tự";
+				check=false;
+			}
+			else {
+				document.getElementsByClassName('passworderr')[0].innerHTML="";
+				check = true;
+			}
+		});
+
+
+		var checkpass = document.getElementsByClassName('checkpass')[0];
+
+		checkpass.addEventListener("blur",function(){
+			if (checkpass.value.trim()=='') {
+				document.getElementsByClassName('confirmpw')[0].innerHTML="moi ban xac nhan mat khau"
+			}
+			else if ((password!= checkpass||confirm_password.length<8)) {
+				document.getElementsByClassName('confirmpw')[0].innerHTML="nhap lai mat khau khong chinh xac";
+				check = false;
+			}
+			else {
+				document.getElementsByClassName('confirmpw')[0].innerHTML="";
+				check = true;
+			}
+		});
+
+		function checkValue(){
+			if (check==true) {
+				alert("Đăng ký thành công!")
+			}
+		}
+	</script>
+</body>
+</html>

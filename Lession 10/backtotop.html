@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Back to top</title>
+	<style type="text/css">
+		
+		.section{
+			width: 100%;
+			height: 300px;
+		}
+		#backtotop{
+			position: fixed;
+			bottom: 50px;
+			right: 50px;
+			background: orange;
+			width: 70px;
+			height: 70px;
+		}
+	</style>
+</head>
+<body>
+	 <ul id="menu">
+	 	<li>menu 1</li>
+	 	<li>menu 2</li>
+	 	<li>menu 3</li>
+	 	<li>menu 4</li>
+	 </ul>
+	 <div class="section">
+	 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa beatae numquam quod at praesentium unde, eius aliquid excepturi! Officia, distinctio natus nam dicta neque minus cumque veniam consequuntur reprehenderit at.
+	 </div>
+	  <div class="section">
+	 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa beatae numquam quod at praesentium unde, eius aliquid excepturi! Officia, distinctio natus nam dicta neque minus cumque veniam consequuntur reprehenderit at.
+	 </div>
+	  <div class="section">
+	 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa beatae numquam quod at praesentium unde, eius aliquid excepturi! Officia, distinctio natus nam dicta neque minus cumque veniam consequuntur reprehenderit at.
+	 </div>
+	  <div class="section">
+	 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa beatae numquam quod at praesentium unde, eius aliquid excepturi! Officia, distinctio natus nam dicta neque minus cumque veniam consequuntur reprehenderit at.
+	 </div>
+	  <div class="section">
+	 	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa beatae numquam quod at praesentium unde, eius aliquid excepturi! Officia, distinctio natus nam dicta neque minus cumque veniam consequuntur reprehenderit at.
+	 </div>
+	 
+	 <a  id="backtotop" href="#menu" title="">Click</a>
+	 <script type="text/javascript">
+	 	document.getElementById('backtotop').style.display = 'none';
+	 	window.addEventListener('scroll', function(){
+	 		if (window.scrollY > 500) {
+	 			document.getElementById('backtotop').style.display = 'block';
+	 		}
+	 		else
+	 			document.getElementById('backtotop').style.display = 'none';
+
+	 	})
+	 </script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>test hw3</title>
+	<style type="text/css">
+		#container .tab{
+			float: left;
+			padding: 10px;
+			margin: 2px;
+			background: #ccc;
+		}
+		#container{
+			position: relative;
+		}
+		#container .content{
+			position: absolute;
+			z-index: 0;
+			top: 50px;
+			left: 0px;
+			width: 50%;
+			height: 100px;
+			background: #ccc;
+		}
+		#container .active .tab{
+			background: orange;
+		}
+		#container .active .content{
+			z-index: 1;
+		}
+	</style>
+</head>
+<body>
+	<div id="container">
+		<div class="section">
+			<span class="tab">
+				Tab 1
+			</span>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, voluptatibus. 1
+			</div>
+		</div>
+		<div class="section active">
+			<span class="tab">
+				Tab 2
+			</span>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, voluptatibus. 2
+			</div>
+		</div>
+		<div class="section">
+			<span class="tab">
+				Tab 3
+			</span>
+			<div class="content">
+				Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto, voluptatibus. 3
+			</div>
+		</div>
+		<script type="text/javascript">
+			var tabs = document.getElementsByClassName('tab');
+			for (var i = 0; i < tabs.length; i++) {
+				tabs[i].addEventListener("click", function(){
+					//ẩn nội dung của các tab khác = xóa lớp active của section
+					var active = document.getElementsByClassName('active')[0];
+					active.className = "section";
+					//hiển thị nội dung của tab được click = chuyển active sang tab click đến
+					this.parentNode.className = "section active";
+				});
+			}
+		</script>
+	</div>
+</body>
+</html>
