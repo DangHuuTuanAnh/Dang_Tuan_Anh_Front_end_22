@@ -93,7 +93,7 @@
 				Email
 			</div>
 			<div class="nhap">
-				<input class="lenght" class="email" type="email" name="email" value="" placeholder="nhập email..."><span class="nameerr"></span>
+				<input class="lenght" class="email" type="email" name="email" value="" placeholder="nhập email..."><span class="emailerr"></span>
 			</div>
 			<!-- <div class="canh-bao">
 				<p class="yeucau">Yêu cầu nhập email</p>
@@ -104,7 +104,7 @@
 				Số điện thoại
 			</div>
 			<div class="nhap">
-				<input class="lenght" class="phone" type="sdt" name="sdt" value="" placeholder="nhập số điện thoại..."><span class="nameerr"></span>
+				<input class="lenght" class="phone" type="sdt" name="sdt" value="" placeholder="nhập số điện thoại..."><span class="phoneerr"></span>
 			</div>
 			<!-- <div class="canh-bao">
 				<p class="yeucau">Yêu cầu nhập đầy số điện thoại</p>
@@ -115,7 +115,7 @@
 				Mật khẩu
 			</div>
 			<div class="nhap">
-				<input class="lenght"class="password" type="password" name="password" value=""><span class="nameerr"></span>
+				<input class="lenght"class="password" type="password" name="password" value=""><span class="passworderr"></span>
 			</div>
 			<!-- <div class="canh-bao">
 				<p class="yeucau">Yêu cầu nhập mật khẩu</p>
@@ -126,7 +126,7 @@
 				Xác nhận mật khẩu
 			</div>
 			<div class="nhap">
-				<input class="lenght" class="checkpass" type="password" name="password" value=""><span class="nameerr"></span>
+				<input class="lenght" class="checkpass" type="password" name="password" value=""><span class="checkpasserr"></span>
 			</div>
 			<!-- <div class="canh-bao">
 				<p class="yeucau">Yêu cầu xác nhận mật khẩu</p>
@@ -181,14 +181,14 @@
 		phone.addEventListener("blur",function(){
 			if (phone.value.trim()=='') {
 
-				document.getElementsByClassName('numberr')[0].innerHTML="mời bạn nhập SDT"
+				document.getElementsByClassName('phoneerr')[0].innerHTML="mời bạn nhập SDT"
 			}
 			 if (isNaN(phone)==true) {
-				document.getElementsByClassName('numberr')[0].innerHTML="SDT phải ở dạng số"
+				document.getElementsByClassName('phoneerr')[0].innerHTML="SDT phải ở dạng số"
 				
 			}
 			else {
-				document.getElementsByClassName('numberr')[0].innerHTML="";
+				document.getElementsByClassName('phoneerr')[0].innerHTML="";
 				
 			}
 		});
@@ -213,14 +213,14 @@
 
 		checkpass.addEventListener("blur",function(){
 			if (checkpass.value.trim()=='') {
-				document.getElementsByClassName('confirmpw')[0].innerHTML="moi ban xac nhan mat khau"
+				document.getElementsByClassName('checkpasserr')[0].innerHTML="moi ban xac nhan mat khau"
 			}
-			else if ((password!= checkpass||confirm_password.length<8)) {
-				document.getElementsByClassName('confirmpw')[0].innerHTML="nhap lai mat khau khong chinh xac";
+			else if ((password!= checkpass||checkpass.length<8)) {
+				document.getElementsByClassName('checkpasserr')[0].innerHTML="nhap lai mat khau khong chinh xac";
 				check = false;
 			}
 			else {
-				document.getElementsByClassName('confirmpw')[0].innerHTML="";
+				document.getElementsByClassName('checkpasserr')[0].innerHTML="";
 				check = true;
 			}
 		});
