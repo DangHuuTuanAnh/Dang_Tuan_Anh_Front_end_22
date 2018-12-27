@@ -55,15 +55,15 @@
 		}
 		.canh-bao{
 			width: 26%;
-			color: red;
+			color: #cc3232;
 			/*border: 1px solid black;*/
 			height: 50px;
 			float: left;
 
 		}
-		.yeucau{
+	/*	.yeucau{
 			display: none;
-		}
+		}*/
 	</style>
 </head>
 <body background="img/background1.jpg">
@@ -73,11 +73,11 @@
 				Họ và tên
 			</div>
 			<div class="nhap">
-				<input class="lenght" id="name2" class="name1" type="textbox" name="" value="" placeholder="nhập họ tên..."><span class="nameerr red"></span>
+				<input class="lenght" id="name2" class="name1" type="textbox" name="name1" value="" placeholder="nhập họ tên...">
 			</div>
-			<!-- <div class="canh-bao">
-				<p class="yeucau" class="nameerr">Yêu cầu nhập đầy đủ họ tên</p>
-			</div> -->
+			<div class="canh-bao">
+				<span class="nameerr red"></span>
+			</div>
 		</div>
 		<div class="child-content">
 			<div class="ten">
@@ -93,44 +93,44 @@
 				Email
 			</div>
 			<div class="nhap">
-				<input class="lenght" class="email" type="email" name="email" value="" placeholder="nhập email..."><span class="emailerr"></span>
+				<input class="lenght" id="form_control" type="email" name="email" value="" placeholder="nhập email...">
 			</div>
-			<!-- <div class="canh-bao">
-				<p class="yeucau">Yêu cầu nhập email</p>
-			</div> -->
+			<div class="canh-bao">
+				<span class="emailerr"></span>
+			</div>
 		</div>
 		<div class="child-content">
 			<div class="ten">
 				Số điện thoại
 			</div>
 			<div class="nhap">
-				<input class="lenght" class="phone" type="sdt" name="sdt" value="" placeholder="nhập số điện thoại..."><span class="phoneerr"></span>
+				<input class="lenght" id="phone" type="sdt" name="sdt" value="" placeholder="nhập số điện thoại...">
 			</div>
-			<!-- <div class="canh-bao">
-				<p class="yeucau">Yêu cầu nhập đầy số điện thoại</p>
-			</div> -->
+			<div class="canh-bao">
+				<span class="phoneerr"></span>
+			</div>
 		</div>
 		<div class="child-content">
 			<div class="ten">
 				Mật khẩu
 			</div>
 			<div class="nhap">
-				<input class="lenght"class="password" type="password" name="password" value=""><span class="passworderr"></span>
+				<input class="lenght" id="password" type="password" name="password" value="">
 			</div>
-			<!-- <div class="canh-bao">
-				<p class="yeucau">Yêu cầu nhập mật khẩu</p>
-			</div> -->
+			<div class="canh-bao">
+				<span class="passworderr"></span>
+			</div>
 		</div>
 		<div class="child-content">
 			<div class="ten">
 				Xác nhận mật khẩu
 			</div>
 			<div class="nhap">
-				<input class="lenght" class="checkpass" type="password" name="password" value=""><span class="checkpasserr"></span>
+				<input class="lenght" id="checkpass" type="password" name="password" value="">
 			</div>
-			<!-- <div class="canh-bao">
-				<p class="yeucau">Yêu cầu xác nhận mật khẩu</p>
-			</div> -->
+			<div class="canh-bao">
+				<span class="checkpasserr"></span>
+			</div>
 		</div>
 	</div>
 	<div id="thaotac">
@@ -151,12 +151,13 @@
 			// });
 			
 		var check=false;
-		var name1 = document.getElementsByClassName('name1')[0];
-		name1.addEventListener('blur', function(){
-			if(name1.value.trim()==''){
+		
+		var name2 = document.getElementById('name2');
+		name2.addEventListener("blur", function(){
+			if(name2.value.trim()==''){
 				document.getElementsByClassName('nameerr')[0].innerHTML="Mời bạn nhập tên";
 			}
-			else if(name1.value.length<8){
+			else if(name2.value.length<8){
 				document.getElementsByClassName('nameerr')[0].innerHTML="Tên Phải lớn hơn 8 kí tự";
 			}
 			else{
@@ -164,7 +165,7 @@
 			}
 		});
 
-		var email =document.getElementsByClassName('email')[0];
+		var form_control =document.getElementById('form_control');
 		
 		var checkMail = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
 		form_control.addEventListener("blur", function(){
@@ -177,11 +178,11 @@
 			}
 		});
 
-		var phone=document.getElementsByClassName('phone')[0];
+		var phone=document.getElementById('phone');
 		phone.addEventListener("blur",function(){
 			if (phone.value.trim()=='') {
 
-				document.getElementsByClassName('phoneerr')[0].innerHTML="mời bạn nhập SDT"
+				document.getElementsByClassName('phoneerr')[0].innerHTML="Mời bạn nhập SDT"
 			}
 			 if (isNaN(phone)==true) {
 				document.getElementsByClassName('phoneerr')[0].innerHTML="SDT phải ở dạng số"
@@ -193,10 +194,10 @@
 			}
 		});
 
-		var password =document.getElementsByClassName('password')[0];
+		var password =document.getElementById('password');
 		password.addEventListener("blur",function(){
 			if (password.value.trim()=='') {
-				document.getElementsByClassName('passworderr')[0].innerHTML="moi ban nhap mat khau"
+				document.getElementsByClassName('passworderr')[0].innerHTML="Mời bạn nhập mật khẩu"
 			}
 			else if (password.value.length<8) {
 				document.getElementsByClassName('passworderr')[0].innerHTML="MK Phải lớn hơn 8 kí tự";
@@ -209,14 +210,14 @@
 		});
 
 
-		var checkpass = document.getElementsByClassName('checkpass')[0];
+		var checkpass = document.getElementById('checkpass');
 
 		checkpass.addEventListener("blur",function(){
 			if (checkpass.value.trim()=='') {
-				document.getElementsByClassName('checkpasserr')[0].innerHTML="moi ban xac nhan mat khau"
+				document.getElementsByClassName('checkpasserr')[0].innerHTML="Mời bạn xác nhận mật khẩu"
 			}
 			else if ((password!= checkpass||checkpass.length<8)) {
-				document.getElementsByClassName('checkpasserr')[0].innerHTML="nhap lai mat khau khong chinh xac";
+				document.getElementsByClassName('checkpasserr')[0].innerHTML="Mật khẩu không trùng khớp";
 				check = false;
 			}
 			else {
