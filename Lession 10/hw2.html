@@ -172,10 +172,11 @@
 			if (form_control.value.trim()=='') {
 				document.getElementsByClassName('emailerr')[0].innerHTML="Mời bạn nhập email"
 			}
-			else if (form_control != checkMail) {
-				document.getElementById('emailerr').innerHTML="Nhập đúng định dạng abc@domain.xyz";
+			else if (form_control.value != checkMail.value) {
+				document.getElementsByClassName('emailerr').innerHTML="Nhập đúng định dạng abc@domain.xyz";
 				check=false;
 			}
+
 		});
 
 		var phone=document.getElementById('phone');
@@ -216,7 +217,7 @@
 			if (checkpass.value.trim()=='') {
 				document.getElementsByClassName('checkpasserr')[0].innerHTML="Mời bạn xác nhận mật khẩu"
 			}
-			else if ((password!= checkpass||checkpass.length<8)) {
+			else if ((password.value!= checkpass.value||checkpass.length<8)) {
 				document.getElementsByClassName('checkpasserr')[0].innerHTML="Mật khẩu không trùng khớp";
 				check = false;
 			}

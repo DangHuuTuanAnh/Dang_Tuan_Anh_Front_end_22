@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bài 2</title>
+	<style type="text/css">
+		 #container{
+			width: 60%;
+			margin: 0 auto;
+			border: 1px solid black;
+			background:#1C1C1C;
+			position: relative;
+		}
+		.content{
+			width: 80%;
+			margin: 0 auto;
+			background: #2E2E2E;
+			color: white;
+		}
+		#header{
+			width: 80%;
+			margin: 0 auto;
+			height: 140px;
+		}
+		.tieude{
+			border: 1px solid black;
+			position: relative;
+		
+		}
+		h3{
+			margin-left: 34px;
+
+		}
+		span{
+			border: 1px solid black;
+			border-radius: 5px;
+			background: #A5DF00;
+			width: 30px;
+			height: 30px;
+		}
+		.plus{
+			position: absolute;
+			left: -10px;
+   			top: 15px;
+   			font-size: 30px!important;
+   			color: green!important;
+		}
+		.minus{
+			position: absolute;
+			left: -10px;
+    		top: 15px;
+    		display: none;
+   			font-size: 30px!important;
+   			color: green!important;
+		}
+		.ND{
+			border: 1px solid black;
+			display: none;
+
+		}
+		p{
+			padding-left: 15px;
+			padding-right: 15px;
+
+		} 
+		.small-header1{
+			/*width: 35%;*/
+			float: left;
+		    color: white;
+		    margin-bottom: 0px;
+		    text-align: center;
+		    margin-left: 30px;
+		}
+		.small-header2{
+			float: left;
+			margin-top: 57px;
+		}
+		.arrow{
+			color: #A5DF00!important;
+		}
+		#logo{
+			width: 80%;
+			margin: 0 auto;
+			height: 55px;
+		}
+		#logo1{
+			width: 10%;
+			height: 50px;
+			border: 1px solid blue;
+			border-radius: 10px;
+			float: right;
+			position: absolute;
+			z-index: 1;
+			right: 0;
+			bottom: 0;
+			color: blue;
+			font-size: 50px;
+		}
+	</style>
+	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+	<script type="text/javascript" src="js/hw2.js"></script>
+</head>
+<body>
+	<div id="container">
+		<div id="header">
+			<div class="small-header1">
+				<i><h1 style="font-size: 60px; color: white;margin-bottom: 0px; ">Akordeon</h1></i>
+				<p class="fa fa-long-arrow-right arrow" style="margin-top: 0px;">A stylo modern accordion</p>
+			</div>
+			<div class="small-header2">
+				<i style="color:#A5DF00;margin-left: 0px;"><h3>Vector PSD</h3></i>
+				
+			</div>
+		</div>
+		<div class="content">
+			<div class="tieude">
+				<h3>This is an expanded panel</h3>
+				<span class="fa fa-minus minus"></span>
+				<span class="fa fa-plus plus"></span>
+			</div>
+			<div class="ND">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum fugiat dolor, facere temporibus molestias aspernatur sunt vero asperiores voluptate, eum quidem! Quas accusamus, id sequi et, cumque fugit enim!</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="tieude">
+				<h3>Second Panel</h3>
+				<span class="fa fa-minus minus"></span>
+				<span class="fa fa-plus plus"></span>
+			</div>
+			<div class="ND">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum fugiat dolor, facere temporibus molestias aspernatur sunt vero asperiores voluptate, eum quidem! Quas accusamus, id sequi et, cumque fugit enim!</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="tieude">
+				<h3>Third Panel</h3>
+				<span class="fa fa-minus minus"></span>
+				<span class="fa fa-plus plus"></span>
+
+			</div>
+			<div class="ND">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum fugiat dolor, facere temporibus molestias aspernatur sunt vero asperiores voluptate, eum quidem! Quas accusamus, id sequi et, cumque fugit enim!</p>
+			</div>
+		</div>
+		<div class="content">
+			<div class="tieude">
+				<h3>Fourth Panel</h3>
+				<span class="fa fa-minus minus"></span>
+				<span class="fa fa-plus plus"></span>
+
+			</div>
+			<div class="ND">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit earum fugiat dolor, facere temporibus molestias aspernatur sunt vero asperiores voluptate, eum quidem! Quas accusamus, id sequi et, cumque fugit enim!</p>
+			</div>
+		</div>
+		<div id="logo">
+			<div id="logo1">
+				<b><p style="margin-top: 0px;">Bit</p></b>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
