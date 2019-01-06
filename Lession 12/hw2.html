@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="author" content="www.frebsite.nl" />
+		<meta name="viewport" content="width=device-width initial-scale=1.0 maximum-scale=1.0 user-scalable=yes" />
+
+		<title>Bài 2</title>
+
+		
+		<!-- <link type="text/css" rel="stylesheet" href="../dist/jquery.mmenu.all.css" /> -->
+		<link rel="stylesheet" href="Css/jquery.mmenu.all.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mmenu.all.js"></script>
+
+		<!-- <script type="text/javascript" src="http://code.jquery.com/jquery-3.2.1.min.js"></script> -->
+		<!-- <script type="text/javascript" src="../dist/jquery.mmenu.all.js"></script> -->
+		<script type="text/javascript">
+			$(function() {
+				$('nav#menu').mmenu({
+					extensions	: [ 'fx-menu-slide', 'shadow-page', 'shadow-panels', 'listview-large', 'pagedim-white' ],
+					iconPanels	: true,
+					counters	: true,
+					keyboardNavigation : {
+						enable	: true,
+						enhance	: true
+					},
+					searchfield : {
+						placeholder	: 'Search menu items'
+					},
+					navbar : {
+						title : 'Advanced menu'
+					},
+					navbars	: [
+						{
+							position	: 'top',
+							content		: [ 'searchfield' ]
+						}, {
+							position	: 'top',
+							content		: [ 'breadcrumbs', 'close' ]
+						}, {
+							position	: 'bottom',
+							content		: [ '<a href="http://mmenu.frebsite.nl/wordpress-plugin" target="_blank">WordPress plugin</a>' ]
+						}
+					]
+				}, {
+					searchfield : {
+						clear : true
+					}
+				});
+			});
+		</script>
+		<style type="text/css">
+			#header{
+				width: 100%;
+				height: 86px;
+				/*border: 1px solid black;*/
+				background:#cccccc3b;
+			}
+			.menutab{
+				float: left;
+				list-style: none;
+				margin-left: 20px; 
+			}
+			#title{
+				width: 30%;
+				/*height: 65px;*/
+				float: left;
+				/*border: 1px solid black;*/
+				color: white;
+				padding-top: 10px;
+				padding-left: 20px;
+			}
+			#contentmenu{
+				width: 50%;
+				height: 65px;
+				float: right;
+				/*border: 1px solid black;*/
+				color: white;
+				padding-top: 10px;
+				
+			}
+			
+			.bars{
+				color: white!important;
+				font-size: 40px!important;
+				display: none;
+			}
+			#content{
+				width: 100%;
+				text-align: center;
+				color: white;
+
+			}
+			.fonts{
+				font-size: 60px;
+				margin-bottom: 0px;
+			}
+			#getitnow{
+				width: 15%;
+				height: 30px;
+				border: 1px solid white;
+				margin: 0 auto;
+				padding-top: 15px;
+				background: #1918183b;
+			}
+			#menu{
+				color: white;
+			}
+			@media (min-width: 701px) and (max-width: 1200px){
+				#header{
+					width: 100%;
+				}
+				#content{
+					width: 100%;
+				}
+				.bars{
+					display: block;
+				}
+			}
+			.ul-lv1{
+				padding-left: 0px;
+			}
+			.menu-lv2{
+				width: 80px;
+				height: 30px;
+				background-color:#1918183b;
+				/*border: 1px solid #7FB051;*/
+				display: none;
+				top: 10;
+				text-align: center;
+				/*padding-left: 0px;*/
+			}
+			.menutab:hover .menu-lv2{
+				display: block;
+			}
+			.icon{
+				color: white!important;
+			}
+		</style>
+	</head>
+	<body style="background-repeat: none;" background="img/background.jpg">
+		<div id="header">
+			<div id="title">
+				<h2><span>WordPress Responsive Menu</span></h2>
+			</div>
+			<div id="contentmenu">
+				<ul>
+					<li class="menutab">About</li>
+					<li class="menutab">Pricing</li>
+					<li class="menutab">Why go pro?</li>
+					<li class="menutab">Support
+						<ul class="ul-lv1">
+							<li class="menu-lv2">Docs</li>
+							<li class="menu-lv2">FAQ</li>
+							<li class="menu-lv2">Donate</li>
+							<li class="menu-lv2">Contact</li>
+						</ul>
+					</li>
+					<li class="menutab">Account</li>
+					<li class="menutab"><a href="#menu"><span class="fa fa-bars bars"></span></a></li>
+				</ul>
+			</div>
+		
+		</div>
+		<div id="content">
+			<p class="fonts">WordPress Responsive Menu Plugin</p>
+			<h1 style="margin-top: 0px;">Tasking the stress out of building your website</h1>
+			<div id="getitnow">
+				<span class="fa fa-calendar-check-o"> GET IT NOW</span>
+			</div>
+		</div>
+		<div id="page" >
+			<nav id="menu" style="background:#1f1d1d3b"> 
+				<ul>
+					<li><a href="#" class="fa fa-home icon"> Home</a></li>
+					<li><span class="fa fa-calendar-o icon"> About us</span>
+						<ul>
+							<li><a href="#about/history" class="fa fa-book"> History</a></li>
+							<li><span class="fa fa-commenting-o">The team</span>
+								<ul>
+									<li><a href="#about/team/management" class="fa fa-address-card"> Management</a></li>
+									<li><a href="#about/team/sales" class="fa fa-address-card"> Sales</a></li>
+									<li><a href="#about/team/development" class="fa fa-address-card"> Development</a></li>
+								</ul>
+							</li>
+							<li><a href="#about/address" class="fa fa-address-card"> Our address</a></li>
+						</ul>
+					</li>
+					<li><a href="#contact" class="fa fa-cube"> Contact</a></li>
+				</ul>
+			</nav>
+		</div>
+	</body>
+</html>
