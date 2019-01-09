@@ -127,16 +127,21 @@ $(function(){
 		
 	}
 	function next4(){
-		alert('check');
+		alert('Hoàn Thành !');
 	}
 	function previous(){
 		var now= $(".contentactive");
-
+		
 		now.attr("class","content");
 		// now.Siblings(dem).
 		// $(".content")[dem].attr("class","content contentactive");
 
 		now.prev().attr("class","content contentactive");
-		dem--;
+		var tabactive= $(".tabactive");
+		tabactive.attr("class", "tab");
+		tabactive.prev().attr("class", "tab tabactive");
+		// dem--;
+
+		
 	}
 })
