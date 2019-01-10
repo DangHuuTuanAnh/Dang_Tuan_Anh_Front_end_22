@@ -54,8 +54,8 @@
 			width: 350px;
 			height: 500px;
 			border: 1px solid black;
-			/*position: absolute;
-			z-index: 1;*/
+			position: absolute;
+			z-index: 2;
 		}
 		.title1{
 			text-align: center;
@@ -69,15 +69,19 @@
 			height: 43px;
 			padding-top: 10px;
 		}
-		/*.picture{
+		.picture{
 			width: 100%;
 			margin: 0 auto;
 			position: absolute;
-			z-index: 0;
-		}*/
+			z-index: 1;
+		}
 		.all{
-			/*position: relative;*/
+			width: 100%;
+			height: 500px;
+			position: relative;
 			background: #cee2dc;
+			z-index: 0;
+
 		}
 	</style>
 </head>
@@ -134,8 +138,10 @@
 	</div>
 	<div class="container-fluid">
 		<div class="container all">
-			<div id="datsanxuat">
-				<!-- <img class="picture" src="img/post-6.jpg"> -->
+			<div id="datsanxuat col-sm-12">
+				<!-- <div class="picture">
+					<img src="img/post-6.jpg">
+				</div> -->
 				<div class="title1"><h5>ĐẶT SẢN XUẤT</h5></div>
 				<div class="title2"><b>ĐỊA CHỈ NHẬN HÀNG</b></div>
 				<div class="container" style="margin-bottom: 10px;">
@@ -143,7 +149,7 @@
 					<input type="text" name="" placeholder="Địa chỉ chi tiết" style="width: 100%;">
 				</div>
 				<div class="title2"><b>THỜI GIAN NHẬN HÀNG</b></div>
-				<div class="container"><span class="fa fa-calendar"> Nhập tên đường và chọn một gợi ý ></span></div>
+				<div class="container"><span class="fa fa-calendar"> Ngày nhận hàng ></span></div>
 				<div class="title2"><b>CHI TIẾT SẢN PHẨM</b></div>
 				<div class="container">
 					<div class="d-flex bd-highlight">
@@ -176,7 +182,7 @@
 			</div>
 			<div class="row">
 				<div class="card-deck">
-				  <div class="card">
+				  <div class="card col-lg-4 col-md-12 col-sm-12">
 				    <img src="img/post-1.jpg" class="card-img-top" alt="...">
 				    <div class="card-body">
 				      <h5 class="card-title">Card title</h5>
@@ -184,7 +190,7 @@
 				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				    </div>
 				  </div>
-				  <div class="card">
+				  <div class="card col-lg-4 col-md-12 col-sm-12">
 				    <img src="img/post-2.jpg" class="card-img-top" alt="...">
 				    <div class="card-body">
 				      <h5 class="card-title">Card title</h5>
@@ -192,7 +198,7 @@
 				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				    </div>
 				  </div>
-				  <div class="card">
+				  <div class="card col-lg-4 col-md-12 col-sm-12">
 				    <img src="img/post-3.jpg" class="card-img-top" alt="...">
 				    <div class="card-body">
 				      <h5 class="card-title">Card title</h5>
@@ -208,7 +214,7 @@
 			</div>
 			<div class="row">
 				<div class="card-deck">
-				  <div class="card">
+				  <div class="card col-lg-4 col-md-12 col-sm-12">
 				    <img src="img/post-4.jpg" class="card-img-top" alt="...">
 				    <div class="card-body">
 				      <h5 class="card-title">Card title</h5>
@@ -216,7 +222,7 @@
 				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				    </div>
 				  </div>
-				  <div class="card">
+				  <div class="card col-lg-4 col-md-12 col-sm-12">
 				    <img src="img/post-5.jpg" class="card-img-top" alt="...">
 				    <div class="card-body">
 				      <h5 class="card-title">Card title</h5>
@@ -224,7 +230,7 @@
 				      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
 				    </div>
 				  </div>
-				  <div class="card">
+				  <div class="card col-lg-4 col-md-12 col-sm-12">
 				    <img src="img/post-6.jpg" class="card-img-top" alt="...">
 				    <div class="card-body">
 				      <h5 class="card-title">Card title</h5>
@@ -239,7 +245,7 @@
 	<div class="container-fluid footer">
 		<div class="container">
 			<div class="row contentfooter">
-				<div class="col-4 childcontent">
+				<div class="col-12 childcontent col-lg-3 col-md-6 col-sm-12">
 					<h6>Thông Tin Công Ty</h6>
 						<ul>
 							<li class="menuft">Công ty cổ phần Alium</li>
@@ -252,7 +258,7 @@
 							<li class="menuft">Email:</li>
 						</ul>
 				</div>
-				<div class="col-2 childcontent">
+				<div class="col-12 childcontent col-lg-3 col-md-6 col-sm-12"">
 					<h6>Thương Hiệu</h6>
 					<ul>
 						<li class="menuft">Giới thiệu</li>
@@ -264,7 +270,7 @@
 						<li class="menuft">Liên hệ</li>
 					</ul>
 				</div>
-				<div class="col-2 childcontent">
+				<div class="col-12 childcontent col-lg-3 col-md-6 col-sm-12"">
 					<h6>Hỗ Trợ</h6>
 					<ul>
 						<li class="menuft">FAQs - Hỏi đáp</li>
@@ -277,7 +283,7 @@
 						<li class="menuft">Chính sách KH thân thiết</li>
 					</ul>
 				</div>
-				<div class="col-4 childcontent">
+				<div class="col-4 childcontent col-lg-3 col-md-6 col-sm-12"">
 					<h6>Đăng Ký Nhận Tin Từ ALIUM</h6>
 					<div class="input-group mb-3">
 					  <input type="text" class="form-control" placeholder="Email@example.com" aria-label="Email@example.com" aria-describedby="basic-addon2">
